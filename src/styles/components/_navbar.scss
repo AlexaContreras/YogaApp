@@ -1,0 +1,149 @@
+.nav-medium {
+  display: none;
+}
+
+.nav-content {
+  --animate-duration: 3s;
+}
+
+Link.links-auth span {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+button .links-auth {
+  color: white;
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul.nav-dropdown-ul {
+    display: flex;
+    flex-direction: column;
+
+    li.nav-dropdown-li {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      background-color: $light-grey;
+
+      border-bottom: 1px solid white;
+      padding: 10px;
+
+      .links-auth {
+        color: $dark-grey;
+        text-decoration: none;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  .nav-dropdown {
+    position: relative;
+    display: inline-block;
+
+    i {
+      margin: 10px;
+      color: $light-grey;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    span {
+      font-size: 30px;
+      font-weight: 600;
+      color: $primary;
+      text-decoration: none;
+    }
+  }
+
+  .nav-dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    width: 100vw;
+    box-shadow: 0px 8px 16px 0px rgba(146, 146, 146, 0.2);
+    z-index: 1;
+  }
+
+  .nav-dropdown:hover .nav-dropdown-content {
+    display: block;
+  }
+
+  .nav-content-buttons {
+    span {
+      margin-right: 20px;
+      color: $dark-grey;
+      font-weight: 500;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  nav {
+    padding: 10px;
+  }
+  div.nav-dropdown {
+    display: none;
+  }
+
+  div.nav-medium {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-left: 25px;
+      font-size: 30px;
+      font-weight: 600;
+      color: $primary;
+      text-decoration: none;
+    }
+
+    ul.nav-medium-ul {
+      margin-left: 25px;
+      display: flex;
+    }
+
+    li.nav-medium-li {
+      list-style: none;
+      margin-right: 25px;
+
+      .links-auth {
+        color: $dark-grey;
+        text-decoration: none;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  .nav-content-buttons {
+    margin-right: 25px;
+
+    button {
+      margin: 0;
+    }
+  }
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+/* @media (min-width: 768px) 
+  @media (min-width: 992px)  */
+
+/* Fixed sidenav, full height */

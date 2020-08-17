@@ -1,0 +1,71 @@
+.btn-logout {
+  border: 0;
+  background-color: $primary;
+  color: white;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 3px;
+  font-weight: 600;
+
+  &:hover {
+    background-color: darken($color: $primary, $amount: 15);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-auth {
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  background-color: $light-grey;
+  border: 0;
+  border-radius: 3px;
+  margin: 10px 0 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+
+  &:hover {
+    background-color: darken($color: $light-grey, $amount: 5);
+  }
+}
+
+.btn-home-images-div {
+  border: 0;
+  background-color: $light-grey;
+  color: $dark-grey;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 30px;
+  font-weight: 600;
+  width: 100px;
+
+  &:hover {
+    background-color: $primary;
+  }
+  &:focus {
+    outline: none;
+    background-color: $primary;
+  }
+
+  &:active {
+    background-color: $primary;
+  }
+}
+
+.btn-center-purple {
+  background-color: $purple;
+  border: 0;
+  color: white;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  font-weight: 600;
+  width: 50%;
+
+  &:focus {
+    outline: none;
+  }
+}

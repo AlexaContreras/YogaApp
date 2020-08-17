@@ -1,0 +1,125 @@
+.yoga-screen-header {
+  height: 87vh;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.yoga-screen-title-yoga {
+  font-size: 80px;
+  font-weight: 900;
+  color: $rose;
+  --animate-duration: 3s;
+}
+
+.yoga-screen-title-portal {
+  font-size: 80px;
+  font-weight: 900;
+  color: $rose;
+  --animate-duration: 5s;
+}
+
+.yoga-screen-title {
+  text-align: center;
+  width: 100vw;
+  background-image: url('/img/lotus.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.meditation-screen-title {
+  text-align: center;
+  width: 100vw;
+  background-image: url('/img/medi.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.yoga-screen-box {
+  display: none;
+}
+
+.yoga-svg {
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  --animate-duration: 1s;
+}
+
+.yoga-screen-p {
+  color: $dark-grey;
+}
+
+@media (min-width: 768px) {
+  .yoga-screen-header {
+    height: 93vh;
+  }
+
+  .yoga-screen-title-yoga {
+    font-size: 120px;
+  }
+
+  .yoga-screen-title-portal {
+    font-size: 120px;
+  }
+  .yoga-screen-p {
+    letter-spacing: 2px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .yoga-screen-header {
+    height: 92vh;
+  }
+
+  .yoga-screen-title {
+    background-image: none;
+  }
+
+  .meditation-screen-title {
+    background-image: none;
+  }
+
+  .yoga-screen-title-yoga {
+    font-size: 180px;
+  }
+
+  .yoga-screen-title-portal {
+    font-size: 180px;
+    margin-left: 150px;
+  }
+
+  .yoga-screen-box {
+    background-color: lighten($color: $primary, $amount: 20);
+    position: relative;
+    z-index: -1;
+    display: inline-block;
+    width: 500px;
+    height: 600px;
+    right: 400px;
+  }
+
+  .yoga-svg {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media (min-width: 1057px) {
+  .yoga-screen-box {
+    right: 320px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .yoga-screen-box {
+    right: 250px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .yoga-screen-box {
+    right: 160px;
+  }
+}
